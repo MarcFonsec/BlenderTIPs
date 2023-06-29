@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+:root {
+	--back_color: #f5f6fa;
+	--menu_color: white;
+	--menu_color_2: rgba(0,0,0,0.04);
+	--word_color: gray;
+	--word_secunday_color: #778ca3;
+	--word_dramatic_color: white;
+    --dramatic_color: #1cc94d;
+    --dramatic_color_a: #f5fcf2;
+    --shadow_slots: 0px 10px 50px rgba(70,0,200,0.3);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	color: var(--word_color);
+}
+
+::placeholder {
+    color: var(--word_color);
+    font-style: italic;
+    font-size: 14px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+body {
+	background: var(--dramatic_color);	
+	overflow-x: hidden;
+}
+
+.background_login {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden
+}
+
+.label_login {
+    background: var(--menu_color);
+    display: flex;
+    width: 50%;
+    height: 70%;
+    border-radius: 30px;
+
+}
+
+.label_market {
+    width: 60%;
+    padding: 30px;
+    background: var(--menu_color_2);
+    border-radius: 30px 0px 0px 30px;
+}
+
+.label_market_name {
+    color: var(--word_color);
+    font-size: 42px;
+}
+
+.label_market_image_local {
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 60px 0px 60px 60px;
+}
+
+.label_infos {
+    width: 30%;
+    padding: 30px 50px 30px 50px;
+}
+
+.label_info_text_init {
+    font-size: 28px;
+}
+
+.label_info_text_login {
+    font-size: 48px;
+    margin-top: -15px;
+    color: var(--dramatic_color);
+}
+
+.forms_login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 20px;    
+}
+
+.forms_login > p {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.label_inputs {
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 20px;
+}
+
+.text_user {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.text_password {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.bkg_input_user {
+    background: lightgray;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.bkg_input_password {
+    background: lightgray;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.input_user {
+    background: none;
+    height: 35px;
+    width: 95%;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+}
+
+.input_password {
+    background: none;
+    height: 35px;
+    width: 95%;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+}
+
+.button_div {
+    display: flex;
+    justify-content: center;
+}
+
+.button_login {
+    background: var(--dramatic_color);
+    color: var(--menu_color);
+    border: none;
+    padding: 7px 0px 7px 0px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.button_login:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(100, 255, 100, 1);
+}
